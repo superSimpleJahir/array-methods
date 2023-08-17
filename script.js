@@ -115,3 +115,81 @@ splice()
 let number = [99, 100, 22, 43, 55];
 number.splice(2, 3, 'a', 'b', 'c');
 console.log(number);
+
+/* ===========================================
+slice()
+=========================================== */
+// The slice() slices out a piece from an array, it creates a new array. 
+// array.slice(start, end); // Syntax
+let numbers = [1, 2, 3, 5, 6, 7, 8, 94, 2, 22, 33, 32];
+let num1 = numbers.slice(1, 4);
+console.log(num1);
+
+/* ===========================================
+reverse()
+=========================================== */
+// The reverse() method reverse the order of the Elements in an array.
+let num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let stir = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+num2.reverse();
+console.log(num2);
+stir.reverse();
+console.log(stir);
+
+/* ===========================================
+sort()
+=========================================== */
+num2.sort();
+console.log(num2);
+stir.sort();
+console.log(stir);
+
+/* ===========================================
+isArray()
+=========================================== */
+// The isArray() method returns true if an object is an array1, otherwise false. Checke is an object is an.
+// array.isArray(obj);
+let num3 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let stir1 = 'Md jahirul islam';
+
+console.log(Array.isArray(num3)); //true
+
+console.log(Array.isArray(stir1)); //false
+
+
+/* ===========================================
+indexof()
+=========================================== */
+
+// The indexof() method returns the first index(positiin) of a specified value, returns -1 if the value is not found. and it searches from left to right. Negative start values counts fromo the last element (but still searches from left to right)
+
+// array.indexOf(item, start);
+let product = ['laptop', 'HeadSet', 'Mobile', 'Router'];
+console.log(product.indexOf('Router', 4));
+
+/* ===========================================
+lastIndexof()
+=========================================== */
+// The lastIndexOf() Method returns the last index(position) of a specified Value, return -1 if the value is not found.start at a specified index and searches from right to left. Negitive start valuse counts from the last element (but still searches from right to left)
+
+console.log(product.indexOf('Mobile', 0));
+console.log(product.lastIndexOf('Mobile', 4));
+
+/* ===========================================
+find()
+=========================================== */
+// The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the tasting function undefined is returned.
+const array4 = [2, 15, 4, 56, 8, 9, 90, 99];
+const found = array4.find((element) => element > 10);
+console.log(found);
+
+/* ===========================================
+findIndex()
+=========================================== */
+
+// the findIndex() method returns the index of the first element in an array that satisfies the provided testing function . If no elements satisfy the testing function, then -1 is returned.
+
+
+
+
+
