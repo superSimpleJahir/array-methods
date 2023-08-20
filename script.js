@@ -102,9 +102,9 @@ sort()
 let ary = [99, 43, 23, 55, 30];
 let str = ['Jahir', 'Mijan', 'Arif', 'Rafi'];
 ary.sort();
-console.log(ary);
+console.log(ary); //return [23, 30, 43, 55, 99];
 str.sort();
-console.log(str);
+console.log(str); //return ['Arif', 'Jahir', 'Mijan', 'Rafi']
 
 /* ===========================================
 splice()
@@ -183,11 +183,19 @@ const array4 = [2, 15, 4, 56, 8, 9, 90, 99];
 const found = array4.find((element) => element > 10);
 console.log(found);
 
-/* ===========================================
-findIndex()
-=========================================== */
+// slice and splice methods the different 
 
-// the findIndex() method returns the index of the first element in an array that satisfies the provided testing function . If no elements satisfy the testing function, then -1 is returned.
+let myArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+console.log(`A`, myArray); //A [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const myNewArray = myArray.slice(1, 3);
+console.log(myNewArray); //[1, 2]
+console.log(`B`, myArray); //B [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+const myNewArray1 = myArray.splice(1, 3);
+console.log(myNewArray1); // [1, 2, 3]
+console.log(`C`, myArray); // C [0, 4, 5, 6, 7, 8, 9]
 
 
 
